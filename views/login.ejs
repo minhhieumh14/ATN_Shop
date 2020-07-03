@@ -1,0 +1,43 @@
+
+
+<html>
+    <%- include('partials/header') -%>
+
+    <!--menu-->
+    <div id="menu">
+        <ul>
+            <a href="http://localhost:2108/login">Log In</a>
+            <li><a href="http://localhost:2108/">Home</a></li>
+            <li><a href="http://localhost:2108/products">Products</a></li>
+            <!--<li><a href="#">PC</a>
+                <ul class="sub-menu">
+                    <li><a href="pages/PC/PC Gaming.html">PC Gaming</a></li>
+                    <li><a href="pages/PC/PC Office.html">PC Office</a></li>
+                    <li><a href="pages/PC/PC Worktation.html">PC Worktation</a></li>
+                </ul>
+            </li>-->
+            <li><a href="http://localhost:2108/staffs">Staffs</a></li>
+            <!--<li><a href="#">Gear</a>
+                <ul class="sub-menu">
+                    <li><a href="pages/Gear/Headphones.html">Headphones</a></li>
+                    <li><a href="pages/Gear/Keyboards.html">Keyboards</a></li>
+                    <li><a href="pages/Gear/Mouses.html">Mouses</a></li>
+                </ul>
+            </li>-->
+            <li><a href="http://localhost:2108/order">Order</a></li>
+        </ul>
+    </div>
+
+    <body>
+        <H2> Login page </H2>
+        <form action="login">
+            <P>Username: <input type="text" name="username"></P>
+            <P>Password: <input type="password" name="password"></P>
+            <P><input type="submit" value="Login"></P>
+        </form>
+
+		
+
+        <%- include('partials/footer') -%>
+    </body>
+</html>
