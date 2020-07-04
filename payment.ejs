@@ -1,0 +1,66 @@
+<%- include('partials/header') -%>
+<!--menu-->
+<div id="menu">
+    <ul>
+        <li><a href="http://localhost:2108/login">Log In</a></li>
+        <li><a href="https://atn-shop312.herokuapp.com/">Home</a></li>
+        <li><a href="https://atn-shop312.herokuapp.com/products">Products</a></li>
+        <!--<li><a href="#">PC</a>
+            <ul class="sub-menu">
+                <li><a href="pages/PC/PC Gaming.html">PC Gaming</a></li>
+                <li><a href="pages/PC/PC Office.html">PC Office</a></li>
+                <li><a href="pages/PC/PC Worktation.html">PC Worktation</a></li>
+            </ul>
+        </li>-->
+        <li><a href="https://atn-shop312.herokuapp.com/staffs">Staffs</a></li>
+        <!--<li><a href="#">Gear</a>
+            <ul class="sub-menu">
+                <li><a href="pages/Gear/Headphones.html">Headphones</a></li>
+                <li><a href="pages/Gear/Keyboards.html">Keyboards</a></li>
+                <li><a href="pages/Gear/Mouses.html">Mouses</a></li>
+            </ul>
+        </li>-->
+        <li><a href="https://atn-shop312.herokuapp.com/order">Order</a></li>
+    </ul>
+</div>
+<HR>
+    <div class="alert alert-warning">
+      <H1>THANH TOÁN </H1>
+    </div>
+<HR>
+
+
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="row">
+                <H1>Chi tiết hóa đơn</H1>
+            </div>
+            
+                <div class="row">
+				<table width = "100%">
+                <% for (var i = 0; i < productlist.length; i++) { %>
+						<tr style="border-width: 5px;border-color: rgb(33, 158, 81);padding-bottom: 15px;">
+							<td>
+								<img width="300px" height="230px" src="/images/<%= productlist[i].urlImg%>">
+							</td>
+							<td > 
+								<P><%= productlist[i].Name %></P>
+                                <p><b>Price: </b> <%= productlist[i].Price%></p>								
+								<p><b>Num.: </b> <%= productlist[i].Num%> </p>
+							</td>
+						</tr>
+                <% } %>
+					
+				</table>
+				</div>
+					
+
+            
+        </div>
+
+     
+      </div>
+
+
+
+<%- include('partials/footer') -%>
